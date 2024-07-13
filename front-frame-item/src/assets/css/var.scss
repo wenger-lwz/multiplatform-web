@@ -1,0 +1,84 @@
+:root {
+  --gj-color-white: #ffffff;
+  --gj-color-black: #000000;
+
+  // Primary
+  --gj-color-primary-dark: #0e5ee1;
+  --gj-color-primary: #1f6eef;
+  --gj-color-primary-light-1: #4994fc;
+  --gj-color-primary-light-2: #c4e3ff;
+  --gj-color-primary-light-3: #edf7ff;
+  --gj-color-primary-light-4: #eef3fb;
+
+  // Grey
+  --gj-color-grey-light: #cccdd6;
+  --gj-color-grey-light-1: #cdcdcd;
+  --gj-color-grey-light-2: #d8dadd;
+  --gj-color-grey-light-3: #e4e5e6;
+  --gj-color-grey-light-4: #eeeff0;
+  --gj-color-grey-light-5: #f2f3f5;
+  --gj-color-grey-light-6: #f5f7fa;
+  --gj-color-grey-light-7: #f6f7f8;
+  --gj-color-grey-light-8: #f6f8fb;
+  --gj-color-grey-light-9: #f7f8f9;
+
+  // Text Color
+  --gj-text-color-primary: #333333;
+  --gj-text-color-regular: #666666;
+  --gj-text-color-secondary: #999999;
+  --gj-text-color-placeholder: var(--gj-text-color-secondary);
+
+  // Background
+  --gj-bg-color: var(--gj-color-grey-light-5);
+  --gj-bg-color-dark: #1c2c49;
+
+  // Button
+  --gj-color-danger: #f5222d;
+  --gj-color-danger-dark: #d20a15;
+  --gj-color-danger-light-1: #ff7875;
+  --gj-color-danger-light-2: #ffa39e;
+  --gj-color-warning: #ed6a0c;
+  --gj-color-warning-light: #f1924e;
+  --gj-color-success: #2da641;
+  --gj-color-success-light: #66be74;
+
+  // Font Size
+  --gj-font-size-extra-large-1: 24px;
+  --gj-font-size-extra-large-2: 22px;
+  --gj-font-size-extra-large-3: 20px;
+  --gj-font-size-large: 18px;
+  --gj-font-size-medium: 16px;
+  --gj-font-size-base: 14px;
+  --gj-font-size-small: 13px;
+  --gj-font-size-extra-small: 12px;
+
+  // Border Radius
+  --gj-border-radius-small: 2px;
+  --gj-border-radius-base: 4px;
+  --gj-border-radius-medium: 6px;
+  --gj-border-radius-round: 20px;
+
+  // Border
+  --gj-border-color-base: var(--gj-color-grey-light-2);
+  --gj-border-color-light: var(--gj-color-grey-light-3);
+  --gj-border-color-lighter: var(--gj-color-grey-light-4);
+  --gj-border-color-hover: var(--gj-color-primary);
+  --gj-border-width-base: 1px;
+  --gj-border-style-base: solid;
+  --gj-border-base: var(--gj-border-width-base) var(--gj-border-style-base) var(--gj-border-color-base);
+
+  // Box Shadow
+  --gj-input-box-shadow: 0 2px 4px 0 rgba(31, 110, 239, .2);
+  --gj-box-shadow-light-small: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+  --gj-box-shadow-light-medium: 0px 2px 10px 0px rgba(0, 0, 0, 0.24);
+  --gj-box-shadow-light-large: 0px 4px 14px 0px rgba(0, 0, 0, 0.26);
+  --gj-box-shadow-dark-small: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+
+  // Reset
+  --el-color-primary: var(--gj-color-primary);
+  --el-disabled-bg-color: var(--gj-color-grey-light-3);
+  --el-disabled-text-color: var(--gj-text-color-secondary);
+  --el-disabled-border-color: var(--gj-color-grey-light-2);
+  --el-border-color-base: var(--gj-color-grey-light-2);
+  --el-border-base: var(--gj-border-width-base) var(--gj-border-style-base) var(--gj-border-color-base);
+}

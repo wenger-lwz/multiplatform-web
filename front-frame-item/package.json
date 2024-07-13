@@ -1,0 +1,88 @@
+{
+  "name": "multiplatform-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode develocalhost",
+    "serve:dev": "vue-cli-service serve --mode development",
+    "serve:test": "vue-cli-service serve --mode devtest",
+    "serve:uat": "vue-cli-service serve --mode devuat",
+    "serve:pro": "vue-cli-service serve --mode production",
+    "lint": "vue-cli-service lint",
+    "lint-fix": "vue-cli-service lint --fix",
+    "build:local": "vue-cli-service build --mode develocalhost",
+    "build:dev": "vue-cli-service build --mode development",
+    "build:test": "vue-cli-service build --mode devtest",
+    "build:uat": "vue-cli-service build --mode devuat",
+    "build": "vue-cli-service build --mode production",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@gj/atom": "1.0.0-alpha.55",
+    "@gj/biz": "1.0.0-alpha.115",
+    "@gj/micro-frontend": "0.0.77",
+    "axios": "^0.25.0",
+    "compression-webpack-plugin": "^5.0.1",
+    "core-js": "^3.6.5",
+    "html2canvas": "^1.4.1",
+    "js-md5": "^0.7.3",
+    "videojs-contrib-hls": "^5.15.0",
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.2.0-beta.29",
+    "vue-router": "^4.0.0-0",
+    "vuedraggable": "^4.1.0",
+    "vuex": "^4.0.0-0",
+    "wangeditor": "^4.7.11",
+    "xss": "^1.0.10"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.1",
+    "node-sass": "^4.12.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^8.0.2",
+    "video.js": "^7.17.0",
+    "vue-svg-icon": "^1.2.9"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "prettier --write",
+      "vue-cli-service lint --fix",
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

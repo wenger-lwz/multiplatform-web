@@ -1,0 +1,68 @@
+// 客服Lazada
+const baseRoute = '/multiplatform-web';
+export default {
+  key: "PLAT_customerSHPE",
+  id: null,
+  platform: 'SHPE',
+  typeStyle: "menu",
+  icon: "shopee",
+  route: '',
+  apiPath: null,
+  description: "Shopee",
+  name: 'Shopee',
+  parentKey: "PLAT_customer",
+  isMultiMenu: true,
+  children: [
+    {
+      key: "PLAT_customerSHPE_afterSale",
+      id: null,
+      platform: 'SHPE',
+      typeStyle: "menu",
+      icon: '',
+      route: '',
+      apiPath: null,
+      description: "售后管理",
+      name: '售后管理',
+      parentKey: "PLAT_customer",
+      isMultiMenu: true,
+      children: [{
+        key: "PLAT_customerSHPE_shopeeReturnOrRefund",
+        id: null,
+        platform: 'SHPE',
+        typeStyle: "page",
+        icon: '',
+        route: baseRoute + "/shopeeReturnOrRefund",
+        apiPath: null,
+        description: "退货/退款",
+        name: '退货/退款',
+        parentKey: "PLAT_customerSHPE_afterSale",
+        isMultiMenu: true,
+      }, {
+        key: "PLAT_customerSHPE_shopeeBuyerCancellation",
+        id: null,
+        platform: 'SHPE',
+        typeStyle: "page",
+        icon: '',
+        route: baseRoute + "/shopeeBuyerCancellation",
+        apiPath: null,
+        description: "买家取消",
+        name: '买家取消',
+        parentKey: "PLAT_customerSHPE_afterSale",
+        isMultiMenu: true,
+      }, {
+        key: "PLAT_customerSHPE_shopeeStoreEvaluation",
+        id: null,
+        platform: 'SHPE',
+        typeStyle: "page",
+        icon: '',
+        route: baseRoute + "/shopeeStoreEvaluation",
+        apiPath: null,
+        description: "商店评价",
+        name: '商店评价',
+        parentKey: "PLAT_customerSHPE_afterSale",
+        isMultiMenu: true,
+      },]
+    },
+
+  ]
+}

@@ -1,0 +1,41 @@
+.formStyle {
+  margin-bottom: 24px;
+  padding: 0 6px;
+  box-sizing: border-box;
+    :deep(.arco-form-item-content) {
+      .arco-input-wrapper.tempateNameItem {
+        width:100%;
+      }
+
+      .arco-input-wrapper.flexItem,
+      .arco-select.flexItem,
+      .arco-cascader.flexItem {
+        line-height: normal;
+        // width: 358px;
+        // max-width: 358px;
+        background-color: #f2f2f5;
+      }
+      .arco-input-wrapper{
+        background-color:#f2f2f5;
+        height: 32px;
+      }
+      .checkboxInputNum .arco-input-wrapper{
+        width: 250px;
+      }
+      .arco-select.priceSelectOne {
+        // width: max-content;
+        // background-color: #e6e6eb;
+      }
+      .arco-select.priceSelectNo {
+        max-width: 100px;
+        // background-color: #e6e6eb;
+      }
+     .appendItem .arco-input-append,
+     .btnPriceInput .arco-input-append {
+      width: 44px;
+      // background-color: #e6e6eb;
+     }
+    }
+}
+
+

@@ -1,0 +1,55 @@
+/**
+Copy from @gj/gplus/pakckages/theme-chalk/src/variables.scss
+*/
+
+/**
+* color
+*/
+$g_primary_color: #0045F0; // 品牌藍
+$g_primary_color_bg: rgba($g_primary_color, 0.1); // 表格 hover 顔色
+$g_primary_color_light_bg: rgba($g_primary_color, 0.05); // tip 背景顔色
+$g_color_scroll: #E5E6EB;
+
+// 灰階
+$g_color_black: #1D2129; // 小標題或表頭
+$g_color_white: #FFFFFF; // 純白
+$g_color_darken: #333659; // 主文字
+$g_color_border: #E6E6ED; // 邊綫
+$g_color_faded: #86909C; // 次文字（placeholder
+$g_color_bg: #E5E5E5; // background
+
+/**
+** base
+*/
+$g_base_gutter: 12px;
+$g_base_padding: 10px;
+$g_base_font_size: 12px;
+$g_base_radius: 4px;
+
+// micro, tiny, small, base, medium, big, huge, giant
+/**
+* gutter
+*/
+$g_gutter: $g_base_gutter * 2; // 24px
+$g_gutter_micro: calc($g_gutter/ 6); // 4px
+$g_gutter_tiny: calc($g_gutter/ 3); // 8px
+$g_gutter_small: $g_base_gutter; // 12px
+$g_gutter_huge: $g_gutter * 2; // 48px
+
+
+
+
+/**
+* padding
+*/
+$g_padding_small: $g_base_padding * 0.8; // 8px
+$g_padding: $g_base_padding; // 10px
+$g_padding_medium: $g_base_padding * 1.2; // 12px
+$g_padding_big: $g_base_padding * 1.6; // 16px
+$g_padding_huge: $g_padding * 2; // 20px
+
+/**
+radius
+*/
+$g_radius: $g_base_radius; // 4px
+$g_radius_medium: calc($g_base_radius/ 2) * 3; //6px

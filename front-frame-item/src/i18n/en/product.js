@@ -1,0 +1,21 @@
+// 产品中心
+export default {
+  product: "Product",
+  productDevelopment: "Product Development",
+  productManage: "Product Manage",
+  infrastructureProduct: "Infrastructure Product",
+  chooseProductsPool: "Choose Products Pool",
+  developingProduct: "Developing Product",
+  productTaskList: "Product TaskList",
+  samplePurchase: "Sample Purchase",
+  devNewProduct: "DevNew Product",
+  productLibrary: "Product Library",
+  productManageTaskList: "Product Manage Task List ",
+  brand: "brand",
+  packagingMaterials: "Packaging materials",
+  tag: "Tag",
+  productCategories: "Product Categories",
+  SKUGenerateRules: "SKU Generate Rules",
+  productConfiguration: "Process Configuration",
+  extendedFormConfiguration: "Extended Form Configuration",
+};

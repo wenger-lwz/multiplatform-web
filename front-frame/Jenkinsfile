@@ -1,0 +1,11 @@
+@Library('test') _
+      def config = [:]
+      config.put('GIT_URL', "http://gitlab.gerpgo.com/multi-platform/front-frame.git")
+      //SharedLibrary_web(config)
+      if("$JENKINS_URL" == "http://106.53.103.74:8080/"){
+            k8s_SharedLibrary_web(config)
+      }else if("$JENKINS_URL" == "http://sjenkins.gerpgo.com/"){
+            prod_k8s_SharedLibrary_web(config)
+      }else{
+            SharedLibrary_web(config)
+      }

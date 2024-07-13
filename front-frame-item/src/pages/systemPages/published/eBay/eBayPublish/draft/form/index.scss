@@ -1,0 +1,31 @@
+@import '@pagesSystem/published/components/CommonLog/index.scss';
+
+:deep(.arco-space-item) {
+
+  .arco-input-wrapper.selAndInputItem,
+  .arco-input-wrapper.inputItem {
+    width: 136px;
+  }
+
+  .arco-btn.btnWidthStyle {
+    height: 32px;
+    min-width: 72px;
+  }
+
+  .arco-btn.btnBorderStyle {
+    color: #000430;
+    border: 1px solid #E6E6ED;
+  }
+
+  .gj-button-size-defalut.viewBtnRight {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    width: 38px;
+  }
+
+}
+
+.rowHeightStyleLastChild {
+  height: 48px !important;
+}

@@ -1,0 +1,28 @@
+
+.rowMargin{
+  padding: 0px 16px;
+  box-sizing: border-box;
+.detailItemStyle {
+  :deep(.arco-space-item) {
+    height: 16px;
+    margin-bottom: 4px !important;
+
+    .titleTxt {
+      color: #999bac;
+    }
+
+    .contentTxt {
+      color: #333659;
+    }
+
+    .updatedTxt {
+      color: #ff5c5c;
+    }
+
+    .titleTxtFont {
+      color: #333659;
+      font-weight: 700;
+    }
+  }
+}
+}

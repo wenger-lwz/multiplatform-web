@@ -1,0 +1,61 @@
+/**
+下载中心消息通知
+For pendingMessageTemplate.vue, resolvedMessageTemplate.vue
+*/
+@import
+'./var.scss',
+'./mixins.scss'
+;
+
+.gj-message {
+  &-h3 {
+    position: relative;
+    // padding-left: $g_padding_medium;
+    font-size: 14px;
+    font-weight: bold;
+    color: $g_color_black;
+    line-height: 1.2143; // 17px / 14px
+    // &::after {
+    //   position: absolute;
+    //   content: '';
+    //   left: 0;
+    //   top: 0;
+    //   width: 4px;
+    //   height: 100%;
+    //   background-color: $g_primary_color;
+    // }
+  }
+  font-size: 12px;
+  line-height: 18px;
+  color: $g_color_darken;
+
+  .link {
+    color: $g_primary_color;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .filename {
+    width: 250px;
+    @include useTextEllipsis();
+
+  }
+}
+
+.arco-notification.arco-notification-success.hidden-notice {
+  width: 32px;
+  height: 32px;
+  margin-right: -19px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.arco-notification.arco-notification-success.message-notification {
+  .arco-notification-left {
+    display: none;
+  }
+  //transition: width 0.2s ease-in-out;
+  //overflow: hidden;
+  //max-height: 360px;
+}

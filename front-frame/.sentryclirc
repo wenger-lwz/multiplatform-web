@@ -1,0 +1,7 @@
+[auth]
+token=883e6a87ffe34b498939d6be5e28fd7710d6c4ea8e2c460cb3f2d1bdf2e4d57b
+
+[defaults]
+url=https://sentry.app.gerpgo.com
+org=gerpgo
+project=front-frame-vue

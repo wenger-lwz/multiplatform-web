@@ -1,0 +1,90 @@
+/**
+代码片段
+*/
+
+// 使 html 下的所有元素都 border-box；
+@mixin useGlobalBoxSizing {
+  box-sizing: border-box;
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+}
+
+// 清除浮动
+@mixin clearByPseudo {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+@mixin clearAfter {
+  &::after {
+    @include clearByPseudo()
+  }
+}
+@mixin clearBefore {
+  &::before {
+    @include clearByPseudo()
+  }
+}
+
+
+/**
+* flex
+*/
+// 使内容竖向排列，并自动调整自身来占满父容器的空间
+@mixin useColumnFlex {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+}
+@mixin useCenterItem {
+  display: flex;
+  align-items: center;
+}
+@mixin useBetweenItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/**
+scrollbar
+*/
+@mixin useGlobalScrollbar {
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $g_color_scroll;
+    border-radius: $g_radius_medium;
+    cursor: pointer;
+  }
+}
+
+
+/**
+text
+*/
+@mixin useTextEllipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/**
+image
+*/
+@mixin useBackgroundImage($url, $size: 'cover') {
+  background-color: transparent;
+  background-image: url($url);
+  background-size:  $size;
+  background-position: center;
+}

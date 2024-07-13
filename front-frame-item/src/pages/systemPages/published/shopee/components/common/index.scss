@@ -1,0 +1,125 @@
+.squre-line {
+  padding: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #e6e6ed;
+  border-radius: 8px;
+}
+.btn-svg {
+  margin-left: 16px;
+  width: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  svg:hover {
+    cursor: pointer;
+  }
+}
+.arco-form-item {
+  margin-bottom: 0;
+}
+.mb8 {
+  margin-bottom: 8px;
+}
+.mb16 {
+  margin-bottom: 16px;
+}
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  .image-box {
+    width: 120px;
+    height: 120px;
+    background-color: #fafafb;
+    border-radius: 6px;
+    position: relative;
+    border: 1px solid #e6e6ed;
+    text-align: center;
+    line-height: 120px;
+    .arco-btn{
+      color: #0045f0;
+      background: #f2f3f5;
+      &:hover{
+        background: #d9e3fd;
+      }
+      &:active{
+        color: #fff;
+        background-color: #0045f0;
+      }
+    }
+    &:hover {
+      border: 1px solid #0045f0;
+      background-color: #f7f9ff;
+    }
+    
+  }
+}
+svg {
+  border: 0;
+  outline: none;
+  &:actived {
+    border: 0;
+    outline: none;
+  }
+}
+.input-seperate {
+  padding: 0 8px;
+}
+
+:deep(.arco-form-item-content-flex) {
+  max-width: 100%;
+}
+
+.basic-info,.logistics-info {
+  .title {
+    padding: 16px 0 2px 0px;
+    font-size: 14px;
+  }
+  .basic-info-form,.logistics-info-form {
+    box-sizing: border-box;
+    padding: 0 16px 0 8px;
+  }
+}
+
+.product-info {
+  .title {
+    padding: 36px 0 2px 0px;
+    font-size: 14px;
+  }
+  .product-info-form {
+    box-sizing: border-box;
+    padding: 0 16px 0 8px;
+    .input-seperate {
+      padding: 0 8px;
+    }
+    // svg
+    .vector02 {
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+    }
+  }
+  :deep(.arco-form-item-content-flex) {
+    max-width: 100%;
+  }
+  .empty-sku {
+    color: #808197;
+  }
+}
+
+.sync-logistics{
+  color: #0045F0;
+  cursor: pointer;
+}
+
+.logistics-box{
+  padding: 12px;
+  border: 1px solid #E6E6ED;
+  border-radius: 8px;
+  .header{
+    font-weight: 700;
+    font-size: 12px;
+    color: #000430;
+  }
+}

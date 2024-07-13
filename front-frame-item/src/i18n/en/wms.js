@@ -1,0 +1,16 @@
+export default {
+  WMS: "WMS",
+  warehouseManagement: "WMS Management",
+  warehouseList: "Warehouse List",
+  stockControl: "Stock Control",
+  stockAllot: "Stock Allot",
+  selfWherehouse: "Self Wherehouse",
+  toDoList: "To Do List",
+  inputManagement: "Input Management",
+  inputPlan: "Input Plan",
+  sign: "Sign",
+  inputOrder: "Input Order",
+  labelingTask: "Labeling Task",
+  qualityInspectionTask: "Quality Inspection Task",
+  shelfTask: "Shelf Task",
+};

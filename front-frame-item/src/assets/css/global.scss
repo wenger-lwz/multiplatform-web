@@ -1,0 +1,366 @@
+body {
+  font-family: PingFang SC, PingFang SC-Bold;
+}
+
+/*全局样式*/
+html,
+body,
+#app,
+.app-wrapper,
+#multiplatform-web,
+#nav,
+.systemPage {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 900px;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+p,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f5fc;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e4e5e6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999999;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #f6f6f6;
+}
+
+/* input number设置 */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 系统模块公共样式 */
+.scrollbar-wrapper {
+  overflow-x: hidden !important;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+// 表单里面的备注说明
+.formLabrl {
+  display: flex;
+  color: #1f6eef;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+
+  .questionLabel {
+    background-color: #1f6eef;
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 4px;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+
+// table列 状态成功字体颜色
+.tbaleStatusSuccess {
+  color: #2da641;
+}
+
+// table列 等待中
+.tbaleStatusPending {
+  color: #f1924e;
+}
+
+// table列 状态失败字体颜色
+.tbaleStatusFial {
+  color: #ff7875;
+}
+
+// table 列表禁用的字体颜色
+.tableDisabled {
+  color: #999999;
+}
+
+// table 列表启用的字体颜色
+.tableStart {
+  color: #66be74;
+}
+
+// 旋转动画(loading)
+@keyframes rotateKeyFrames {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// 控制table-header的滚动固定的样式
+.addTableHeaderScroll {
+  position: fixed;
+  top: 86px;
+  z-index: 2001;
+}
+
+// table操作列容器
+.actionBtnContent {
+  display: flex;
+}
+
+/* 字体不换行,超出省略号 
+  * $n 不换行的行数
+*/
+@mixin fontNoWrap($n) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $n;
+}
+
+// 字体超出1行省略
+.fontNoWrap-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 字体超出2行省略
+.fontNoWrap-2 {
+  @include fontNoWrap(2);
+}
+
+// 字体超出3行省略
+.fontNoWrap-3 {
+  @include fontNoWrap(3);
+}
+
+.arco-modal.materialCenter-modal {
+  >.arco-modal-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+  }
+
+  .materialCenter-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 12px;
+    border-top: 1px solid #e6e6ed;
+  }
+}
+
+.select-director {
+  .arco-cascader-panel {
+    height: 246px;
+
+    .arco-cascader-panel-column {
+      min-width: 160px;
+      max-width: 160px;
+      max-height: 246px;
+    }
+
+    .arco-cascader-option-label {
+      width: 107px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .arco-cascader-list-empty {
+    height: 160px;
+  }
+}
+
+.arco-input-wrapper {
+  &.input-dashed-disabled {
+    background-color: #fafafb !important;
+    border: 1px dashed #cccdd6 !important;
+    color: #808197 !important;
+  }
+}
+
+// 富文本编辑器自定义按钮
+.w-e-menu-pic {
+  .w-e-menu-pic-btn {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    background-image: url(../img/icon_found_img.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .w-e-menu-pic-btn:hover {
+    background-color: #F6F6F6;
+  }
+
+  .w-e-menu-video-btn {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    background-image: url(../img/icon_found_video.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .w-e-menu-video-btn:hover {
+    background-color: #F6F6F6;
+  }
+}
+
+.red {
+  color: #ff5c5c;
+}
+
+.surely-table-header {
+  height: 40px !important;
+}
+
+.table-selected-rows-nums {
+  color: #86909c;
+  font-size: 12px;
+
+  span {
+    &:last-child {
+      padding-left: 3px;
+      color: #0045f0;
+    }
+  }
+}
+
+.table-more-handles {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  width: 100%;
+}
+
+.listing-table-loading {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.arco-tag-size-large {
+  font-size: 12px !important;
+}
+
+.arco-table {
+  .arco-table-tr {
+    .arco-table-th {
+      color: #1d2129;
+      font-size: 12px;
+      font-weight: 600;
+      background-color: #f2f2f5;
+    }
+
+    .arco-table-td {
+      color: #1d2129;
+      font-size: 12px;
+    }
+
+    .arco-table-cell {
+      padding: 8px 16px;
+    }
+  }
+}
+
+.popover-table-small {
+  .arco-popover-popup-content {
+    padding: 0 16px 12px 16px;
+  }
+
+  .arco-popover-title {
+    color: #333659;
+    padding: 8px 0;
+    line-height: 16px;
+  }
+
+  .arco-popover-content {
+    margin-top: 0;
+    border: 1px solid #f0f0f0;
+  }
+
+  .surely-table {
+    .surely-table-header {
+      height: 32px !important;
+
+      .surely-table-header-cell {
+        height: 32px !important;
+      }
+    }
+  }
+}

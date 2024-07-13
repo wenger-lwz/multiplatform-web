@@ -1,0 +1,56 @@
+pipeline{
+    agent any
+    tools {
+        nodejs 'node-v14.18.2'
+    }
+
+    environment {
+        GIT_URL = 'http://gitlab.gerpgo.com/multi-platform/multiplatform-web.git'
+    }
+
+    parameters {
+        choice(name: 'env', choices: ['test', 'dev','uat'], description: '请选择环境')
+        gitParameter branchFilter: 'origin/(.*)', defaultValue: 'main', name: 'BRANCH', type: 'PT_BRANCH'
+    }
+
+    stages {
+        stage('下载源码'){
+            steps {
+                git branch: "${params.BRANCH}", credentialsId: 'lixin-gitlab', url: "${env.GIT_URL}"
+            }
+        }
+        stage('编译'){
+            steps {
+                script {
+                    sh 'yarn install'
+                    
+                    if(env.env == 'test') {
+                       sh 'npm run build:test'
+                    } else if(env.env == 'dev'){
+                      sh 'npm run build:dev'
+                    } else if(env.env == 'uat'){
+                      sh 'npm run build:uat'
+                    }        
+                }
+            }
+        }
+        stage('部署'){
+            steps {
+                 echo "jobName:${env.JOB_NAME}"
+                 echo "env: ${params.env}"
+                 echo "pwd: ${env.WORKSPACE}"
+                 echo "BRANCH: ${env.BRANCH}"
+
+                 script {
+                    if(env.env == 'test') {
+                        sh "/usr/bin/ansible-playbook /home/jenkins/application/docker/front-playbook.yml -e PWD=${env.WORKSPACE}/multiplatform-web -e TARGET=/nginx/  -e env=${params.env} "
+                    } else if(env.env == 'dev'){
+                        sh "/usr/bin/ansible-playbook /home/jenkins/application/docker/front-playbook.yml -e PWD=${env.WORKSPACE}/multiplatform-web -e TARGET=/nginx/   -e env=${params.env} "
+                    } else if(env.env == 'uat'){
+                        sh "/usr/bin/ansible-playbook /home/jenkins/application/docker/front-playbook.yml -e PWD=${env.WORKSPACE}/multiplatform-web -e TARGET=/nginx/   -e env=${params.env} "
+                    }
+                 }
+            }
+        }
+    }
+}

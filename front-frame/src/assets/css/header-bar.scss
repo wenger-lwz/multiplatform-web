@@ -1,0 +1,231 @@
+@import './var.scss'
+, './mixins.scss'
+;
+
+$menu_color: #0A1D38;
+$menu_height: 40px;
+
+.header-bar {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $menu_color;
+
+    .arco-menu-light .arco-menu-pop-header {
+      background-color: transparent!important;
+    }
+  }
+
+  &-logo {
+    width: 80px;
+    height: $menu_height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    // .svg-icon {
+    //   width: auto!important;
+    //   height: 14px!important;
+    // }
+  }
+
+  &-menu {
+    width: 100%;
+
+    .arco-menu-inner {
+      overflow: hidden;
+      padding: 0;
+    }
+    .arco-menu {
+      font-size: 16px;
+      font-weight: bold;
+      background-color: $menu_color;
+      &-item {
+        margin-left: 0!important;
+        padding: 0;
+        color: #C9CDD4;
+        line-height: $menu_height;
+        background-color: transparent;
+        border-radius: 0;
+        &:hover {
+          color: $g_color_white;
+          background-color: rgba(255, 255, 255, 0.08);
+        }
+        .menu-text {
+          display: inline-block;
+          padding: 0 16px;
+          &-active {
+            color: white;
+          }
+        }
+        &.arco-menu-selected {
+          font-weight: bold;
+          background-color: rgba(255, 255, 255, 0.2)!important;
+        }
+      }
+
+
+
+    }
+    .arco-menu-selected, .link-activated {
+      color: $g_color_white!important;
+      font-weight: bold!important;
+       &:hover {
+          color: $g_color_white!important;
+          background-color: rgba(255, 255, 255, 0.2)!important;
+      }
+      &-label {
+        display: none; // 不需要选中条
+
+      }
+    }
+
+  }
+
+  &-notice {
+    flex: none;
+  }
+
+  &-user {
+    flex: none;
+    .sidebar-user {
+      padding: 0;
+
+      .sidebar-user-head {
+        display: flex;
+        align-items: center;
+        padding: 0 14px;
+        height: 32px;
+
+        .user-bar-name {
+          font-weight: 500;
+          @include useTextEllipsis();
+        }
+        .user-bar-arrow {
+          transform: rotate(270deg);
+        }
+      }
+    }
+    .sidebar-user-head.arco-dropdown-open {
+      .user-bar-arrow {
+        transform: rotate(360deg)!important;
+      }
+    }
+  }
+
+  // 头部导航二级菜单
+  &__menu-item {
+    display: flex;
+    overflow: auto hidden;
+    flex: none;
+    max-height: 480px;
+    color: #1D2129;
+    font-size: 13px;
+
+    &__wrap {
+      display: flex;
+      .menu-side {
+        flex: none;
+        width: 90px;
+        .active {
+        }
+        li {
+          background: #f2f3f5;
+          &.active {
+            background: #ffffff;
+          }
+        }
+      }
+      .menu-brand {
+        position: relative;
+        display: block;
+        width: 90px;
+        height: 40px;
+        overflow: hidden;
+        .svg {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+
+    .menu-item {
+      flex: none;
+      box-sizing: border-box;
+      width: 186px;
+      margin: 0;
+      padding: 16px;
+      border-right: 1px solid #E6E6ED;
+      &-title {
+        width: 100%;
+        color: #86909C;
+
+      }
+      &-dd {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        height: 24px;
+        padding: 4px;
+        margin: 8px 0 0 0;
+        border-radius: 4px;
+        .gj-menu-item-link {
+          width: 100%;
+          @include useTextEllipsis();
+          color: #1D2129;
+          text-decoration: none;
+        }
+        .favorite-icon  {
+          flex: none;
+        }
+        &:hover {
+          .favorite-icon {
+            opacity: 1;
+          }
+          background-color: #f2f3f5;
+        }
+        &:active {
+          background-color: #f2f3f5;
+        }
+      }
+    }
+
+  }
+
+}
+
+.gj-headerbar-menu-trigger-popup {
+  max-width: 100%!important;
+  max-height: 480px!important;
+  border-radius: 0!important;
+}
+
+
+/*
+* 导航切换弹框
+*/
+.switch-navigator {
+  .content {
+    width: 950px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    .img {
+      width: 467px;
+      height: 376px;
+      cursor: pointer;
+      img {
+        display: block;
+        border: 0;
+      }
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

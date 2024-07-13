@@ -1,0 +1,106 @@
+{
+  "name": "front-frame",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "preserve": "node --max_old_space_size=20000 ./node_modules/@gj/env-cli/env g-env -t vue",
+    "preserve:dev": "npm run preserve",
+    "postinstall": "npm run preserve",
+    "prebuild": "npm run preserve",
+    "serve": "vue-cli-service serve --mode develocalhost",
+    "serve:dev": "vue-cli-service serve --mode development",
+    "serve:test": "vue-cli-service serve --mode devtest",
+    "serve:uat": "vue-cli-service serve --mode devuat",
+    "serve:pro": "vue-cli-service serve --mode production",
+    "lint": "vue-cli-service lint",
+    "lint-fix": "vue-cli-service lint --fix",
+    "build:local": "vue-cli-service build --mode develocalhost",
+    "build:dev": "vue-cli-service build --mode development",
+    "build:test": "vue-cli-service build --mode devtest",
+    "build:uat": "vue-cli-service build --mode devuat",
+    "build": "vue-cli-service build --mode production",
+    "postbuild": "node --max_old_space_size=20000 ./node_modules/@gj/cli/bin/gj s -I ./front-frame/js -B ./node_modules/.bin/sentry-cli --urlPrefix ~/js && rm -rf front-frame/js/*.map",
+    "postbuild:test": "node --max_old_space_size=20000 ./node_modules/@gj/cli/bin/gj s -I ./front-frame/js -B ./node_modules/.bin/sentry-cli --urlPrefix ~/js"
+  },
+  "dependencies": {
+    "@gj/atom": "^1.0.0-alpha.53",
+    "@gj/biz": "^1.0.0-alpha.100",
+    "@gj/env-cli": "0.0.42",
+    "@gj/icons-vue": "^1.6.0",
+    "@gj/micro-frontend": "0.0.78",
+    "@micro-zoe/micro-app": "^0.8.4",
+    "@sentry/tracing": "^6.19.7",
+    "@sentry/vue": "^6.19.7",
+    "axios": "^0.24.0",
+    "date-fns": "^2.28.0",
+    "lodash": "^4.17.21",
+    "rxjs": "~7.4.0",
+    "screenfull": "^4.2.0",
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.2.0-beta.29",
+    "vue-router": "^4.0.0-0",
+    "vue-svg-icon": "^1.2.9",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@gj/cli": "0.0.28",
+    "babel-eslint": "^10.1.0",
+    "compression-webpack-plugin": "^5.0.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8",
+    "@sentry/cli": "^2.0.0",
+    "sass-loader": "^10.1.1",
+    "typescript": "~3.9.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-jest": "^5.0.0-0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest",
+    "transform": {
+      "^.+\\.vue$": "vue-jest"
+    }
+  }
+}

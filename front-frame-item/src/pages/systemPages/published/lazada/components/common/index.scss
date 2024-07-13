@@ -1,0 +1,132 @@
+.squre-line {
+  padding: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #e6e6ed;
+  border-radius: 8px;
+}
+
+.btn-svg {
+  margin-left: 16px;
+  width: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+  svg:hover {
+    cursor: pointer;
+  }
+}
+
+.mb6 {
+  margin-bottom: 6px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  .image-box {
+    width: 120px;
+    height: 120px;
+    background: #fafafb;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 120px;
+    border: 1px solid #e6e6ed;
+    line-height: 120px;
+
+    &:hover {
+      border: 1px solid #0045f0;
+    }
+  }
+
+}
+
+svg {
+  border: 0;
+  outline: none;
+
+  &:actived {
+    border: 0;
+    outline: none;
+  }
+}
+
+.input-seperate {
+  padding: 0 8px;
+}
+
+:deep(.arco-form-item-content-flex) {
+  max-width: 100%;
+}
+
+// 基础信息
+.basic-info {
+  .title {
+    padding: 32px 0 2px 0px;
+    font-size: 14px;
+  }
+
+  .basic-info-form {
+    box-sizing: border-box;
+    padding: 0 16px 0 8px;
+  }
+}
+
+// 产品信息
+.product-info {
+  .title {
+    padding: 22px 0 2px 0px;
+    font-size: 14px;
+  }
+
+  .product-info-form {
+    box-sizing: border-box;
+    padding: 0 16px 0 8px;
+
+    .input-seperate {
+      padding: 0 8px;
+    }
+
+    // svg
+    .vector02 {
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  :deep(.arco-form-item-content-flex) {
+    max-width: 100%;
+  }
+
+  .empty-sku {
+    color: #808197;
+  }
+}
+
+// 重置 form-item 的必填校验样式
+.arco-form-item {
+  margin-bottom: 10px;
+}
+
+:deep(.arco-form-item-wrapper-col) {
+  position: relative;
+}
+
+:deep(.arco-form-item-message) {
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+}

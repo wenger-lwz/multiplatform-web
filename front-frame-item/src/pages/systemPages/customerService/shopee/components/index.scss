@@ -1,0 +1,45 @@
+ 
+ .detail-descriptions-info{
+   display: flex;
+   flex-direction: column;
+   row-gap: 12px;
+   .content-wrap {
+    display: flex;
+    gap: 10px;
+    li {
+      list-style: none;
+      display: flex;
+      font-size: 12px;
+     gap: 8px;
+      span {
+        width: 110px;
+        text-align: right;
+        color: #86909c;
+        
+      }
+      .gb-text {
+        font-style: normal;
+        color: #1d2129;
+      }
+    }
+    .w-25 {
+      width: 25%;
+    }
+    .w-30 {
+      width: 30%;
+    }
+    .w-40 {
+      width: 40%;
+    }
+    .w-70 {
+      width: 70%;
+    }
+    .w-100 {
+      width: 100%;
+    }
+    .mr-10 {
+      margin-right: 10px;
+    }
+  }
+
+ }

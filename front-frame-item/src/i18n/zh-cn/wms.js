@@ -1,0 +1,16 @@
+export default {
+  WMS: "仓储管理",
+  warehouseManagement: "仓库管理",
+  warehouseList: "仓库列表",
+  stockControl: "库存管理",
+  stockAllot: "库存调拨",
+  selfWherehouse: "自营仓",
+  toDoList: "任务列表",
+  inputManagement: "入库管理",
+  inputPlan: "入库计划",
+  sign: "签收",
+  inputOrder: "入库单",
+  labelingTask: "贴标任务",
+  qualityInspectionTask: "质检任务",
+  shelfTask: "上架任务",
+};

@@ -1,0 +1,308 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fafafb;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 7, 79, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 7, 79, 0.1);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #f6f6f6;
+}
+
+#nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.arco-table-body {
+  height: 100%;
+}
+
+.arco-spin {
+  height: 100%;
+}
+
+.arco-table-container {
+  height: calc(100% - 56px);
+  box-sizing: border-box;
+  .arco-table-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.arco-table-header {
+  min-height: 41px;
+  &::-webkit-scrollbar-track {
+    background-color: #f2f3f5;
+  }
+}
+
+.arco-table-pagination {
+  .arco-pagination {
+    margin-bottom: 12px;
+    margin-right: 10px;
+  }
+}
+.primary {
+  color: var(--gj-color-primary);
+}
+.success {
+  color: var(--gj-color-success);
+}
+.normal {
+  color: rgb(29, 33, 41);
+}
+.danger {
+  color: var(--gj-color-danger-dark);
+}
+
+.normal-filter-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: relative;
+}
+.advance-filter-content {
+  margin-top: 8px;
+  width: 100%;
+}
+// .operate_bar-content {
+//   border-top: 1px #f2f2f5 solid;
+//   margin-top: 8px;
+//   width: 100%;
+// }
+
+.advance-search {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+// 默认视图
+.tags-content {
+   width: 100%;
+  div.query-condition {
+    margin-top: 12px !important;
+  }
+  div.default-view {
+    display: none;
+  }
+}
+
+.btnStyle {
+  min-width: 72px;
+}
+
+//全局查询区域样式
+
+.common-pages {
+  // 输入框
+  .search-input {
+    width: 160px;
+  }
+  //模糊(精准)1
+  .search-select-left {
+    width: 120px;
+  }
+  //模糊(精准)2
+  .search-select-rigth {
+    width: 160px;
+  }
+  //模糊(精准)1 + 模糊(精准)2
+  .search-select-center {
+    width: 80px;
+  }
+
+  //select框
+  .search-select {
+    width: 160px;
+  }
+  // 开始时间至结束时间
+  .search-range-picker {
+    width: 220px;
+  }
+  // 日期
+  .search-date-picker {
+    width: 160px;
+  }
+  // 日期 + 开始时间至结束时间
+  .search-date-range-picker {
+    width: 320px;
+  }
+  // gb-select
+  .search-gb-select {
+    width: 180px;
+  }
+  // gb-select带图标
+  .search-gb-select-svg {
+    width: 290px;
+  }
+  // 多行搜索
+  .search-gb-select-select{
+    .arco-select{
+      width:120px;
+    }
+  }
+  .tableInfopermissionsBtn{
+    padding: 0px;
+    width: 100%;
+    height: 18px;
+    .table-column-copy-content-1:hover .copy{
+      top:0
+    }
+  }
+  .tableInfopermissionsBtn.arco-btn-text:hover {
+    background: inherit !important;
+ } 
+
+// 设计组合样式
+ .gb-composite {
+  display: inline-flex;
+}
+
+.gb-composite > *:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.gb-composite > *:not(:first-child) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.gb-composite > *:hover {
+  z-index: 1;
+}
+
+.gb-composite > *:focus-within {
+  z-index: 2;
+}
+
+// 二级gb开头的选择器
+
+.gb-composite > *:not(:first-child)[class|=gb] *:first-child {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.gb-composite > *:not(:last-child)[class|=gb] *:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.selectedRowKeysStyle{
+  color: #0045F0;
+}
+}
+
+.tag-time-search {
+  .arco-tag {
+    border: 1px solid #DADDE2;
+    border-radius: 2px 0 0 2px;
+    font-size: 12px;
+    background-color: #F7F8FA;
+    border-right: 0px;
+  }
+  .arco-picker {
+     border-radius: 0 2px 2px 0;
+  }
+}
+
+/* 表格中超出省略号*/
+@mixin table-column-copy-content($row) {
+  width: 100%;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $row;
+  line-clamp: $row;
+  -webkit-box-orient: vertical;
+  display: inline-block;
+  display: flex;
+  &:hover {
+    color: #0045f0;
+    width: 80%;
+    flex: 1;
+    align-items: end;
+    .copy {
+      display: inline-block;
+      margin-left: 2px;
+      position: relative;
+      top: -3px;
+    }
+  }
+  .gb-copy {
+    display: inline-block;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    line-clamp: $row;
+    -webkit-box-orient: vertical;
+    max-width: 80%;
+    cursor: pointer;
+    .copy-icon {
+      display: none !important;
+    }
+  }
+}
+
+// 表格中1行省略
+.table-column-copy-content-1 {
+  @include table-column-copy-content(1);
+}
+// 表格中2行省略
+.table-column-copy-content-2 {
+  @include table-column-copy-content(2);
+}
+// 表格中3行省略
+.table-column-copy-content-3 {
+  @include table-column-copy-content(3);
+}
+
+.gb-modal-createFrom {
+    .arco-modal-body{
+      .arco-form{
+         .textareaSizeBtn{
+            margin-top: -12px;
+            margin-bottom: 0px;
+          }
+      }
+    }
+}
+@import './var.scss';
+@import './global.scss';
+
+
+
+

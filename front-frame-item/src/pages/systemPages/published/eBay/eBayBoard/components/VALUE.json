@@ -1,0 +1,724 @@
+{
+  "code": 200,
+  "message": null,
+  "data": {
+    "domesticList": [
+      {
+        "id": "gerp_exclude_shipping_0_Domestic Location_Alaska/Hawaii",
+        "siteId": 0,
+        "countryCode": "Alaska/Hawaii",
+        "locationCode": "Domestic Location",
+        "countryEnName": "Alaska/Hawaii",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Domestic Location_Alaska/Hawaii",
+            "siteId": 0,
+            "countryCode": "Alaska/Hawaii",
+            "locationCode": "Domestic Location",
+            "countryEnName": "Alaska/Hawaii",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Domestic Location_US Protectorates",
+            "siteId": 0,
+            "countryCode": "US Protectorates",
+            "locationCode": "Domestic Location",
+            "countryEnName": "US Protectorates",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Domestic Location_APO/FPO",
+            "siteId": 0,
+            "countryCode": "APO/FPO",
+            "locationCode": "Domestic Location",
+            "countryEnName": "APO/FPO",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      },
+      {
+        "id": "gerp_exclude_shipping_0_Domestic Location_US Protectorates",
+        "siteId": 0,
+        "countryCode": "US Protectorates",
+        "locationCode": "Domestic Location",
+        "countryEnName": "US Protectorates",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Domestic Location_Alaska/Hawaii",
+            "siteId": 0,
+            "countryCode": "Alaska/Hawaii",
+            "locationCode": "Domestic Location",
+            "countryEnName": "Alaska/Hawaii",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Domestic Location_US Protectorates",
+            "siteId": 0,
+            "countryCode": "US Protectorates",
+            "locationCode": "Domestic Location",
+            "countryEnName": "US Protectorates",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Domestic Location_APO/FPO",
+            "siteId": 0,
+            "countryCode": "APO/FPO",
+            "locationCode": "Domestic Location",
+            "countryEnName": "APO/FPO",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      },
+      {
+        "id": "gerp_exclude_shipping_0_Domestic Location_APO/FPO",
+        "siteId": 0,
+        "countryCode": "APO/FPO",
+        "locationCode": "Domestic Location",
+        "countryEnName": "APO/FPO",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Domestic Location_Alaska/Hawaii",
+            "siteId": 0,
+            "countryCode": "Alaska/Hawaii",
+            "locationCode": "Domestic Location",
+            "countryEnName": "Alaska/Hawaii",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Domestic Location_US Protectorates",
+            "siteId": 0,
+            "countryCode": "US Protectorates",
+            "locationCode": "Domestic Location",
+            "countryEnName": "US Protectorates",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Domestic Location_APO/FPO",
+            "siteId": 0,
+            "countryCode": "APO/FPO",
+            "locationCode": "Domestic Location",
+            "countryEnName": "APO/FPO",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      }
+    ],
+    "internationallist": [
+      {
+        "id": "gerp_exclude_shipping_0_Worldwide_Africa",
+        "siteId": 0,
+        "countryCode": "Africa",
+        "locationCode": "Worldwide",
+        "countryEnName": "Africa",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Africa",
+            "siteId": 0,
+            "countryCode": "Africa",
+            "locationCode": "Worldwide",
+            "countryEnName": "Africa",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Asia",
+            "siteId": 0,
+            "countryCode": "Asia",
+            "locationCode": "Worldwide",
+            "countryEnName": "Asia",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Central America and Caribbean",
+            "siteId": 0,
+            "countryCode": "Central America and Caribbean",
+            "locationCode": "Worldwide",
+            "countryEnName": "Central America and Caribbean",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Europe",
+            "siteId": 0,
+            "countryCode": "Europe",
+            "locationCode": "Worldwide",
+            "countryEnName": "Europe",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_North America",
+            "siteId": 0,
+            "countryCode": "North America",
+            "locationCode": "Worldwide",
+            "countryEnName": "North America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Oceania",
+            "siteId": 0,
+            "countryCode": "Oceania",
+            "locationCode": "Worldwide",
+            "countryEnName": "Oceania",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_South America",
+            "siteId": 0,
+            "countryCode": "South America",
+            "locationCode": "Worldwide",
+            "countryEnName": "South America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      },
+      {
+        "id": "gerp_exclude_shipping_0_Worldwide_Asia",
+        "siteId": 0,
+        "countryCode": "Asia",
+        "locationCode": "Worldwide",
+        "countryEnName": "Asia",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Africa",
+            "siteId": 0,
+            "countryCode": "Africa",
+            "locationCode": "Worldwide",
+            "countryEnName": "Africa",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Asia",
+            "siteId": 0,
+            "countryCode": "Asia",
+            "locationCode": "Worldwide",
+            "countryEnName": "Asia",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Central America and Caribbean",
+            "siteId": 0,
+            "countryCode": "Central America and Caribbean",
+            "locationCode": "Worldwide",
+            "countryEnName": "Central America and Caribbean",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Europe",
+            "siteId": 0,
+            "countryCode": "Europe",
+            "locationCode": "Worldwide",
+            "countryEnName": "Europe",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_North America",
+            "siteId": 0,
+            "countryCode": "North America",
+            "locationCode": "Worldwide",
+            "countryEnName": "North America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Oceania",
+            "siteId": 0,
+            "countryCode": "Oceania",
+            "locationCode": "Worldwide",
+            "countryEnName": "Oceania",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_South America",
+            "siteId": 0,
+            "countryCode": "South America",
+            "locationCode": "Worldwide",
+            "countryEnName": "South America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      },
+      {
+        "id": "gerp_exclude_shipping_0_Worldwide_Central America and Caribbean",
+        "siteId": 0,
+        "countryCode": "Central America and Caribbean",
+        "locationCode": "Worldwide",
+        "countryEnName": "Central America and Caribbean",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Africa",
+            "siteId": 0,
+            "countryCode": "Africa",
+            "locationCode": "Worldwide",
+            "countryEnName": "Africa",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Asia",
+            "siteId": 0,
+            "countryCode": "Asia",
+            "locationCode": "Worldwide",
+            "countryEnName": "Asia",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Central America and Caribbean",
+            "siteId": 0,
+            "countryCode": "Central America and Caribbean",
+            "locationCode": "Worldwide",
+            "countryEnName": "Central America and Caribbean",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Europe",
+            "siteId": 0,
+            "countryCode": "Europe",
+            "locationCode": "Worldwide",
+            "countryEnName": "Europe",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_North America",
+            "siteId": 0,
+            "countryCode": "North America",
+            "locationCode": "Worldwide",
+            "countryEnName": "North America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Oceania",
+            "siteId": 0,
+            "countryCode": "Oceania",
+            "locationCode": "Worldwide",
+            "countryEnName": "Oceania",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_South America",
+            "siteId": 0,
+            "countryCode": "South America",
+            "locationCode": "Worldwide",
+            "countryEnName": "South America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      },
+      {
+        "id": "gerp_exclude_shipping_0_Worldwide_Europe",
+        "siteId": 0,
+        "countryCode": "Europe",
+        "locationCode": "Worldwide",
+        "countryEnName": "Europe",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Africa",
+            "siteId": 0,
+            "countryCode": "Africa",
+            "locationCode": "Worldwide",
+            "countryEnName": "Africa",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Asia",
+            "siteId": 0,
+            "countryCode": "Asia",
+            "locationCode": "Worldwide",
+            "countryEnName": "Asia",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Central America and Caribbean",
+            "siteId": 0,
+            "countryCode": "Central America and Caribbean",
+            "locationCode": "Worldwide",
+            "countryEnName": "Central America and Caribbean",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Europe",
+            "siteId": 0,
+            "countryCode": "Europe",
+            "locationCode": "Worldwide",
+            "countryEnName": "Europe",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_North America",
+            "siteId": 0,
+            "countryCode": "North America",
+            "locationCode": "Worldwide",
+            "countryEnName": "North America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Oceania",
+            "siteId": 0,
+            "countryCode": "Oceania",
+            "locationCode": "Worldwide",
+            "countryEnName": "Oceania",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_South America",
+            "siteId": 0,
+            "countryCode": "South America",
+            "locationCode": "Worldwide",
+            "countryEnName": "South America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      },
+      {
+        "id": "gerp_exclude_shipping_0_Worldwide_North America",
+        "siteId": 0,
+        "countryCode": "North America",
+        "locationCode": "Worldwide",
+        "countryEnName": "North America",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Africa",
+            "siteId": 0,
+            "countryCode": "Africa",
+            "locationCode": "Worldwide",
+            "countryEnName": "Africa",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Asia",
+            "siteId": 0,
+            "countryCode": "Asia",
+            "locationCode": "Worldwide",
+            "countryEnName": "Asia",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Central America and Caribbean",
+            "siteId": 0,
+            "countryCode": "Central America and Caribbean",
+            "locationCode": "Worldwide",
+            "countryEnName": "Central America and Caribbean",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Europe",
+            "siteId": 0,
+            "countryCode": "Europe",
+            "locationCode": "Worldwide",
+            "countryEnName": "Europe",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_North America",
+            "siteId": 0,
+            "countryCode": "North America",
+            "locationCode": "Worldwide",
+            "countryEnName": "North America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Oceania",
+            "siteId": 0,
+            "countryCode": "Oceania",
+            "locationCode": "Worldwide",
+            "countryEnName": "Oceania",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_South America",
+            "siteId": 0,
+            "countryCode": "South America",
+            "locationCode": "Worldwide",
+            "countryEnName": "South America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      },
+      {
+        "id": "gerp_exclude_shipping_0_Worldwide_Oceania",
+        "siteId": 0,
+        "countryCode": "Oceania",
+        "locationCode": "Worldwide",
+        "countryEnName": "Oceania",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Africa",
+            "siteId": 0,
+            "countryCode": "Africa",
+            "locationCode": "Worldwide",
+            "countryEnName": "Africa",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Asia",
+            "siteId": 0,
+            "countryCode": "Asia",
+            "locationCode": "Worldwide",
+            "countryEnName": "Asia",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Central America and Caribbean",
+            "siteId": 0,
+            "countryCode": "Central America and Caribbean",
+            "locationCode": "Worldwide",
+            "countryEnName": "Central America and Caribbean",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Europe",
+            "siteId": 0,
+            "countryCode": "Europe",
+            "locationCode": "Worldwide",
+            "countryEnName": "Europe",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_North America",
+            "siteId": 0,
+            "countryCode": "North America",
+            "locationCode": "Worldwide",
+            "countryEnName": "North America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Oceania",
+            "siteId": 0,
+            "countryCode": "Oceania",
+            "locationCode": "Worldwide",
+            "countryEnName": "Oceania",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_South America",
+            "siteId": 0,
+            "countryCode": "South America",
+            "locationCode": "Worldwide",
+            "countryEnName": "South America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      },
+      {
+        "id": "gerp_exclude_shipping_0_Worldwide_South America",
+        "siteId": 0,
+        "countryCode": "South America",
+        "locationCode": "Worldwide",
+        "countryEnName": "South America",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Africa",
+            "siteId": 0,
+            "countryCode": "Africa",
+            "locationCode": "Worldwide",
+            "countryEnName": "Africa",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Asia",
+            "siteId": 0,
+            "countryCode": "Asia",
+            "locationCode": "Worldwide",
+            "countryEnName": "Asia",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Central America and Caribbean",
+            "siteId": 0,
+            "countryCode": "Central America and Caribbean",
+            "locationCode": "Worldwide",
+            "countryEnName": "Central America and Caribbean",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Europe",
+            "siteId": 0,
+            "countryCode": "Europe",
+            "locationCode": "Worldwide",
+            "countryEnName": "Europe",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_North America",
+            "siteId": 0,
+            "countryCode": "North America",
+            "locationCode": "Worldwide",
+            "countryEnName": "North America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_Oceania",
+            "siteId": 0,
+            "countryCode": "Oceania",
+            "locationCode": "Worldwide",
+            "countryEnName": "Oceania",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          },
+          {
+            "id": "gerp_exclude_shipping_0_Worldwide_South America",
+            "siteId": 0,
+            "countryCode": "South America",
+            "locationCode": "Worldwide",
+            "countryEnName": "South America",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      }
+    ],
+    "additionalList": [
+      {
+        "id": "gerp_exclude_shipping_0_Additional Locations_PO Box",
+        "siteId": 0,
+        "countryCode": "PO Box",
+        "locationCode": "Additional Locations",
+        "countryEnName": "PO Box",
+        "countryCnName": null,
+        "updatedTime": "2022-03-11 17:44:07",
+        "childs": [
+          {
+            "id": "gerp_exclude_shipping_0_Additional Locations_PO Box",
+            "siteId": 0,
+            "countryCode": "PO Box",
+            "locationCode": "Additional Locations",
+            "countryEnName": "PO Box",
+            "countryCnName": null,
+            "updatedTime": "2022-03-11 17:44:07",
+            "childs": null
+          }
+        ]
+      }
+    ]
+  },
+  "success": true
+}
